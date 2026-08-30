@@ -145,25 +145,25 @@ footer {
 .header-inner,
 .footer-inner {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 1rem;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .header-inner,
   .footer-inner {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
-
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
   .header-inner,
   .footer-inner {
-    flex-direction: column;
-    align-items: flex-start;
+    max-width: 1100px;
+    margin: 0 auto;
   }
 }
 
