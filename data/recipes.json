@@ -1,14 +1,26 @@
 {
   "categories": [
-    { "id": "lite-ice-cream", "label": "Lite Ice Cream", "blurb": "Lower-sugar, protein-forward pints that still spin up creamy." },
-    { "id": "sorbet", "label": "Sorbet", "blurb": "Dairy-free, fruit-led and sharp. The fastest pints to put together." },
-    { "id": "gelato", "label": "Gelato", "blurb": "Denser and slower-melting than ice cream, with less air spun in." }
+    {
+      "id": "classic",
+      "label": "Classic",
+      "blurb": "Full-fat, full-flavour pints in the traditional style."
+    },
+    {
+      "id": "protein",
+      "label": "Protein",
+      "blurb": "Lower-sugar, protein-forward pints that still spin up creamy."
+    },
+    {
+      "id": "fruity",
+      "label": "Fruity",
+      "blurb": "Dairy-free, fruit-led and sharp. The fastest pints to put together."
+    }
   ],
   "recipes": [
     {
       "id": "salt-licorice",
       "title": "Salt Licorice Protein Ice Cream",
-      "category": "lite-ice-cream",
+      "category": "protein",
       "summary": "Black, salty and faintly medicinal in the best Nordic way, with enough protein to pass as breakfast.",
       "image": "img/salt-licorice.svg",
       "imageAlt": "A dark, near-black scoop of salt licorice ice cream in a bowl",
@@ -22,23 +34,76 @@
       "container": "710 ml Deluxe pint",
       "article": "Licorice is a flavour that punishes half measures. Go light on it and you get a grey pint that tastes vaguely of aniseed; commit, and you get something genuinely worth making. This one commits. Licorice powder does the heavy lifting, salmiak sharpens it into proper salty licorice, and the mascarpone keeps the whole thing from turning chalky the way protein bases often do. The xanthan gum is not optional if you want a smooth first spin. Protein powder holds very little fat, and fat is what normally stops ice crystals forming, so the gum stands in for it. A quarter teaspoon is enough to change the texture completely, and a whole teaspoon would make it slimy.",
       "ingredients": [
-        { "group": "Dry", "metric": "2 dl vanilla protein powder", "imperial": "3/4 cup + 2 tbsp vanilla protein powder" },
-        { "group": "Dry", "metric": "1/2 dl caster sugar", "imperial": "3 1/2 tbsp caster sugar" },
-        { "group": "Dry", "metric": "20 g licorice powder", "imperial": "3 tbsp licorice powder" },
-        { "group": "Dry", "metric": "1.5 ml xanthan gum", "imperial": "1/4 tsp xanthan gum" },
-        { "group": "Dry", "metric": "2 tsp salmiak powder (optional)", "imperial": "2 tsp salmiak powder (optional)" },
-        { "group": "Wet", "metric": "3 dl heavy cream", "imperial": "1 1/4 cups heavy cream" },
-        { "group": "Wet", "metric": "2 dl whole milk", "imperial": "3/4 cup + 2 tbsp whole milk" },
-        { "group": "Wet", "metric": "125 g mascarpone", "imperial": "1/2 cup (4 1/2 oz) mascarpone" }
+        {
+          "group": "Dry",
+          "metric": "2 dl vanilla protein powder",
+          "imperial": "3/4 cup + 2 tbsp vanilla protein powder"
+        },
+        {
+          "group": "Dry",
+          "metric": "1/2 dl caster sugar",
+          "imperial": "3 1/2 tbsp caster sugar"
+        },
+        {
+          "group": "Dry",
+          "metric": "20 g licorice powder",
+          "imperial": "3 tbsp licorice powder"
+        },
+        {
+          "group": "Dry",
+          "metric": "1.5 ml xanthan gum",
+          "imperial": "1/4 tsp xanthan gum"
+        },
+        {
+          "group": "Dry",
+          "metric": "2 tsp salmiak powder (optional)",
+          "imperial": "2 tsp salmiak powder (optional)"
+        },
+        {
+          "group": "Wet",
+          "metric": "3 dl heavy cream",
+          "imperial": "1 1/4 cups heavy cream"
+        },
+        {
+          "group": "Wet",
+          "metric": "2 dl whole milk",
+          "imperial": "3/4 cup + 2 tbsp whole milk"
+        },
+        {
+          "group": "Wet",
+          "metric": "125 g mascarpone",
+          "imperial": "1/2 cup (4 1/2 oz) mascarpone"
+        }
       ],
       "steps": [
-        "Whisk all the dry ingredients together in a bowl for a good thirty seconds, until the colour is even and no pale streaks of protein powder remain.",
-        "Add the dry mix and all the wet ingredients to a blender and run until completely smooth, about 45 seconds. Stop once to scrape the sides.",
-        "Pour into the pint container, stopping at the MAX FILL line.",
-        "Level the surface with a spoon, fit the lid, and freeze flat for a full 24 hours.",
-        "Spin on LITE ICE CREAM straight from the freezer.",
-        "If the result comes out crumbly rather than creamy, add a tablespoon of milk and run RE-SPIN. Repeat once if it still needs it.",
-        "Serve topped with a thick berry sauce and chopped dark chocolate."
+        {
+          "title": "Whisk the dry mix",
+          "detail": "Whisk all the dry ingredients together in a bowl for a good thirty seconds, until the colour is even and no pale streaks of protein powder remain."
+        },
+        {
+          "title": "Blend the base",
+          "detail": "Add the dry mix and all the wet ingredients to a blender and run until completely smooth, about 45 seconds. Stop once to scrape the sides."
+        },
+        {
+          "title": "Fill the pint",
+          "detail": "Pour into the pint container, stopping at the MAX FILL line."
+        },
+        {
+          "title": "Freeze level",
+          "detail": "Level the surface with a spoon, fit the lid, and freeze flat for a full 24 hours."
+        },
+        {
+          "title": "Spin",
+          "detail": "Spin on LITE ICE CREAM straight from the freezer."
+        },
+        {
+          "title": "Re-spin if needed",
+          "detail": "If the result comes out crumbly rather than creamy, add a tablespoon of milk and run RE-SPIN. Repeat once if it still needs it."
+        },
+        {
+          "title": "Finish and serve",
+          "detail": "Serve topped with a thick berry sauce and chopped dark chocolate."
+        }
       ],
       "tips": [
         "This makes roughly 7 dl of base, which fills a 710 ml Deluxe pint almost exactly. In a 473 ml pint, make two-thirds of the recipe rather than overfilling — a pint filled past the MAX line spins badly and strains the motor.",
@@ -51,7 +116,7 @@
     {
       "id": "chocolate-banana",
       "title": "Chocolate Banana Protein Ice Cream",
-      "category": "lite-ice-cream",
+      "category": "protein",
       "summary": "The reliable one. Ripe banana does most of the sweetening, so the sugar stays low without the flavour going flat.",
       "image": "img/chocolate-banana.svg",
       "imageAlt": "A scoop of chocolate banana ice cream topped with whipped cream and crumbled cookies",
@@ -65,24 +130,80 @@
       "container": "710 ml Deluxe pint",
       "article": "This is the recipe to start with if you have never made a protein pint before, because banana is extremely forgiving. It brings sweetness, body and just enough starch to soften the chalkiness that protein powder alone gives you, which means the margin for error on everything else is wide. Ripeness is the one variable that matters: a banana with brown spots is significantly sweeter than a yellow one, and if yours is heavily spotted you can cut the sugar to a third of a decilitre without noticing. Cacao powder is bitter and drying on its own, so it needs both the sugar and the mascarpone to land properly. Do not be tempted to skip the cheese.",
       "ingredients": [
-        { "group": "Dry", "metric": "2 dl chocolate protein powder", "imperial": "3/4 cup + 2 tbsp chocolate protein powder" },
-        { "group": "Dry", "metric": "1/2 dl caster sugar", "imperial": "3 1/2 tbsp caster sugar" },
-        { "group": "Dry", "metric": "2 tbsp cacao powder", "imperial": "2 tbsp cacao powder" },
-        { "group": "Dry", "metric": "1.5 ml xanthan gum", "imperial": "1/4 tsp xanthan gum" },
-        { "group": "Wet", "metric": "2.5 dl heavy cream", "imperial": "1 cup heavy cream" },
-        { "group": "Wet", "metric": "1.5 dl whole milk", "imperial": "2/3 cup whole milk" },
-        { "group": "Wet", "metric": "1 ripe banana, peeled (about 110 g)", "imperial": "1 ripe banana, peeled (about 4 oz)" },
-        { "group": "Wet", "metric": "125 g mascarpone", "imperial": "1/2 cup (4 1/2 oz) mascarpone" }
+        {
+          "group": "Dry",
+          "metric": "2 dl chocolate protein powder",
+          "imperial": "3/4 cup + 2 tbsp chocolate protein powder"
+        },
+        {
+          "group": "Dry",
+          "metric": "1/2 dl caster sugar",
+          "imperial": "3 1/2 tbsp caster sugar"
+        },
+        {
+          "group": "Dry",
+          "metric": "2 tbsp cacao powder",
+          "imperial": "2 tbsp cacao powder"
+        },
+        {
+          "group": "Dry",
+          "metric": "1.5 ml xanthan gum",
+          "imperial": "1/4 tsp xanthan gum"
+        },
+        {
+          "group": "Wet",
+          "metric": "2.5 dl heavy cream",
+          "imperial": "1 cup heavy cream"
+        },
+        {
+          "group": "Wet",
+          "metric": "1.5 dl whole milk",
+          "imperial": "2/3 cup whole milk"
+        },
+        {
+          "group": "Wet",
+          "metric": "1 ripe banana, peeled (about 110 g)",
+          "imperial": "1 ripe banana, peeled (about 4 oz)"
+        },
+        {
+          "group": "Wet",
+          "metric": "125 g mascarpone",
+          "imperial": "1/2 cup (4 1/2 oz) mascarpone"
+        }
       ],
       "steps": [
-        "Whisk all the dry ingredients together until evenly coloured, with the xanthan gum fully dispersed through the powder.",
-        "Break the peeled banana into a few rough chunks and drop it straight into the blender — there is no need to mash it first if you are blending.",
-        "Add the dry mix and the remaining wet ingredients and blend until completely smooth, about 45 seconds.",
-        "Pour into the pint container, stopping at the MAX FILL line.",
-        "Level the surface, fit the lid, and freeze flat for a full 24 hours.",
-        "Spin on LITE ICE CREAM straight from the freezer.",
-        "If it comes out crumbly, add a tablespoon of milk and run RE-SPIN.",
-        "Serve with whipped cream and crumbled cookies."
+        {
+          "title": "Whisk the dry mix",
+          "detail": "Whisk all the dry ingredients together until evenly coloured, with the xanthan gum fully dispersed through the powder."
+        },
+        {
+          "title": "Prepare the banana",
+          "detail": "Break the peeled banana into a few rough chunks and drop it straight into the blender — there is no need to mash it first if you are blending."
+        },
+        {
+          "title": "Blend the base",
+          "detail": "Add the dry mix and the remaining wet ingredients and blend until completely smooth, about 45 seconds."
+        },
+        {
+          "title": "Fill the pint",
+          "detail": "Pour into the pint container, stopping at the MAX FILL line."
+        },
+        {
+          "title": "Freeze level",
+          "detail": "Level the surface, fit the lid, and freeze flat for a full 24 hours."
+        },
+        {
+          "title": "Spin",
+          "detail": "Spin on LITE ICE CREAM straight from the freezer."
+        },
+        {
+          "title": "Re-spin if needed",
+          "detail": "If it comes out crumbly, add a tablespoon of milk and run RE-SPIN."
+        },
+        {
+          "title": "Finish and serve",
+          "detail": "Serve with whipped cream and crumbled cookies."
+        }
       ],
       "tips": [
         "This makes roughly 7 dl and is sized for a 710 ml Deluxe pint. Scale to two-thirds for a 473 ml pint.",
@@ -94,7 +215,7 @@
     {
       "id": "raspberry-lime-sorbet",
       "title": "Raspberry Lime Sorbet",
-      "category": "sorbet",
+      "category": "fruity",
       "summary": "Sharp, dairy-free and about six minutes of actual work. Straining the seeds is what makes it feel bought rather than made.",
       "image": "img/raspberry-lime-sorbet.svg",
       "imageAlt": "Deep pink raspberry sorbet scooped into a chilled glass with a lime wedge",
@@ -108,21 +229,65 @@
       "container": "710 ml Deluxe pint",
       "article": "Sorbet is where the Creami is at its most convincing, because there is no fat to fake and nothing to hide behind — you are tasting the fruit and the sugar and very little else. That also makes the sugar level non-negotiable in a way it is not with ice cream. Sugar is not only there for sweetness; it lowers the freezing point, and a sorbet made with too little of it freezes into something closer to a solid block than a scoopable pint. If you cut the sugar here, expect to run RE-SPIN twice. Frozen raspberries work exactly as well as fresh and cost a fraction as much, so use whichever you have.",
       "ingredients": [
-        { "group": "Fruit", "metric": "500 g raspberries, fresh or thawed from frozen", "imperial": "1 lb 2 oz raspberries, fresh or thawed from frozen" },
-        { "group": "Fruit", "metric": "Juice of 1 lime (about 2 tbsp)", "imperial": "Juice of 1 lime (about 2 tbsp)" },
-        { "group": "Syrup", "metric": "1 dl caster sugar", "imperial": "1/2 cup caster sugar" },
-        { "group": "Syrup", "metric": "1 dl water", "imperial": "Scant 1/2 cup water" },
-        { "group": "Syrup", "metric": "1 pinch fine sea salt", "imperial": "1 pinch fine sea salt" }
+        {
+          "group": "Fruit",
+          "metric": "500 g raspberries, fresh or thawed from frozen",
+          "imperial": "1 lb 2 oz raspberries, fresh or thawed from frozen"
+        },
+        {
+          "group": "Fruit",
+          "metric": "Juice of 1 lime (about 2 tbsp)",
+          "imperial": "Juice of 1 lime (about 2 tbsp)"
+        },
+        {
+          "group": "Syrup",
+          "metric": "1 dl caster sugar",
+          "imperial": "1/2 cup caster sugar"
+        },
+        {
+          "group": "Syrup",
+          "metric": "1 dl water",
+          "imperial": "Scant 1/2 cup water"
+        },
+        {
+          "group": "Syrup",
+          "metric": "1 pinch fine sea salt",
+          "imperial": "1 pinch fine sea salt"
+        }
       ],
       "steps": [
-        "Warm the sugar, water and salt in a small pan over a low heat, stirring until the sugar has completely dissolved. Do not let it boil. Set aside to cool to room temperature.",
-        "Blend the raspberries and lime juice until smooth.",
-        "Push the purée through a fine sieve with the back of a spoon and discard the seeds. This takes about two minutes and it is the single biggest difference between a good pint and a gritty one.",
-        "Stir the cooled syrup into the strained purée.",
-        "Pour into the pint container, stopping at the MAX FILL line.",
-        "Level the surface, fit the lid, and freeze flat for a full 24 hours.",
-        "Spin on SORBET straight from the freezer.",
-        "If it comes out powdery, add a tablespoon of water and run RE-SPIN."
+        {
+          "title": "Make the syrup",
+          "detail": "Warm the sugar, water and salt in a small pan over a low heat, stirring until the sugar has completely dissolved. Do not let it boil. Set aside to cool to room temperature."
+        },
+        {
+          "title": "Blend the fruit",
+          "detail": "Blend the raspberries and lime juice until smooth."
+        },
+        {
+          "title": "Strain the seeds",
+          "detail": "Push the purée through a fine sieve with the back of a spoon and discard the seeds. This takes about two minutes and it is the single biggest difference between a good pint and a gritty one."
+        },
+        {
+          "title": "Combine",
+          "detail": "Stir the cooled syrup into the strained purée."
+        },
+        {
+          "title": "Fill the pint",
+          "detail": "Pour into the pint container, stopping at the MAX FILL line."
+        },
+        {
+          "title": "Freeze level",
+          "detail": "Level the surface, fit the lid, and freeze flat for a full 24 hours."
+        },
+        {
+          "title": "Spin",
+          "detail": "Spin on SORBET straight from the freezer."
+        },
+        {
+          "title": "Re-spin if needed",
+          "detail": "If it comes out powdery, add a tablespoon of water and run RE-SPIN."
+        }
       ],
       "tips": [
         "The syrup must be fully cool before it meets the fruit, or you will cook some of the flavour out of the raspberries.",
@@ -133,7 +298,7 @@
     {
       "id": "mango-passionfruit-sorbet",
       "title": "Mango Passionfruit Sorbet",
-      "category": "sorbet",
+      "category": "fruity",
       "summary": "Heavy tropical sweetness cut hard by passionfruit acid. No straining needed — the seeds earn their place here.",
       "image": "img/mango-passionfruit-sorbet.svg",
       "imageAlt": "Bright orange mango sorbet with passionfruit seeds spooned over the top",
@@ -147,21 +312,66 @@
       "container": "710 ml Deluxe pint",
       "article": "Mango on its own makes a sorbet that is pleasant and slightly boring — all sweetness, no edge. Passionfruit fixes that in one step, and the crunch of the seeds gives the pint some texture, which is a rare thing in a sorbet. Ripeness matters more here than in any other recipe on the site. A properly ripe mango gives slightly under thumb pressure at the stem end and smells sweet before you cut it; an underripe one is fibrous, sour, and no amount of sugar will rescue it. If all you can find is hard supermarket mango, leave it on a windowsill for three days rather than pressing on regardless.",
       "ingredients": [
-        { "group": "Fruit", "metric": "450 g ripe mango flesh (about 2 mangoes)", "imperial": "1 lb ripe mango flesh (about 2 mangoes)" },
-        { "group": "Fruit", "metric": "Pulp of 4 passionfruit (about 1 dl)", "imperial": "Pulp of 4 passionfruit (about 1/2 cup)" },
-        { "group": "Fruit", "metric": "1 tbsp lime juice", "imperial": "1 tbsp lime juice" },
-        { "group": "Syrup", "metric": "3/4 dl caster sugar", "imperial": "1/3 cup caster sugar" },
-        { "group": "Syrup", "metric": "1 dl water", "imperial": "Scant 1/2 cup water" },
-        { "group": "Syrup", "metric": "1 pinch fine sea salt", "imperial": "1 pinch fine sea salt" }
+        {
+          "group": "Fruit",
+          "metric": "450 g ripe mango flesh (about 2 mangoes)",
+          "imperial": "1 lb ripe mango flesh (about 2 mangoes)"
+        },
+        {
+          "group": "Fruit",
+          "metric": "Pulp of 4 passionfruit (about 1 dl)",
+          "imperial": "Pulp of 4 passionfruit (about 1/2 cup)"
+        },
+        {
+          "group": "Fruit",
+          "metric": "1 tbsp lime juice",
+          "imperial": "1 tbsp lime juice"
+        },
+        {
+          "group": "Syrup",
+          "metric": "3/4 dl caster sugar",
+          "imperial": "1/3 cup caster sugar"
+        },
+        {
+          "group": "Syrup",
+          "metric": "1 dl water",
+          "imperial": "Scant 1/2 cup water"
+        },
+        {
+          "group": "Syrup",
+          "metric": "1 pinch fine sea salt",
+          "imperial": "1 pinch fine sea salt"
+        }
       ],
       "steps": [
-        "Warm the sugar, water and salt over a low heat until the sugar dissolves, then set aside to cool completely.",
-        "Blend the mango flesh and lime juice until entirely smooth, with no fibrous threads left.",
-        "Stir in the cooled syrup, then stir in the passionfruit pulp by hand so the seeds stay whole.",
-        "Pour into the pint container, stopping at the MAX FILL line.",
-        "Level the surface, fit the lid, and freeze flat for a full 24 hours.",
-        "Spin on SORBET straight from the freezer.",
-        "If it comes out powdery, add a tablespoon of water and run RE-SPIN."
+        {
+          "title": "Make the syrup",
+          "detail": "Warm the sugar, water and salt over a low heat until the sugar dissolves, then set aside to cool completely."
+        },
+        {
+          "title": "Blend the mango",
+          "detail": "Blend the mango flesh and lime juice until entirely smooth, with no fibrous threads left."
+        },
+        {
+          "title": "Fold in the passionfruit",
+          "detail": "Stir in the cooled syrup, then stir in the passionfruit pulp by hand so the seeds stay whole."
+        },
+        {
+          "title": "Fill the pint",
+          "detail": "Pour into the pint container, stopping at the MAX FILL line."
+        },
+        {
+          "title": "Freeze level",
+          "detail": "Level the surface, fit the lid, and freeze flat for a full 24 hours."
+        },
+        {
+          "title": "Spin",
+          "detail": "Spin on SORBET straight from the freezer."
+        },
+        {
+          "title": "Re-spin if needed",
+          "detail": "If it comes out powdery, add a tablespoon of water and run RE-SPIN."
+        }
       ],
       "tips": [
         "Blend the mango longer than feels necessary. Mango fibre is the usual reason a tropical sorbet feels stringy.",
@@ -172,7 +382,7 @@
     {
       "id": "pistachio-gelato",
       "title": "Pistachio Gelato",
-      "category": "gelato",
+      "category": "classic",
       "summary": "Dense, savoury-sweet and genuinely green — no colouring, no almond shortcuts, just a lot of pistachio.",
       "image": "img/pistachio-gelato.svg",
       "imageAlt": "Pale green pistachio gelato in a metal tub with chopped pistachios scattered on top",
@@ -186,22 +396,70 @@
       "container": "710 ml Deluxe pint",
       "article": "Most pistachio ice cream is mostly almond extract and green food colouring, which is why real pistachio gelato surprises people the first time — it is duller in colour and far more savoury than expected. The salt is doing real work here, not just seasoning; pistachio is a fatty, faintly grassy nut and without enough salt the whole thing reads as bland. Use unsweetened pistachio butter if you can find it, because the ready-sweetened spreads will push this well past where you want it. If you are grinding your own nuts, expect to run the blender for several minutes and to end up with something closer to a paste than a butter, which is fine.",
       "ingredients": [
-        { "group": "Base", "metric": "3 dl whole milk", "imperial": "1 1/4 cups whole milk" },
-        { "group": "Base", "metric": "1.5 dl heavy cream", "imperial": "2/3 cup heavy cream" },
-        { "group": "Base", "metric": "1 dl caster sugar", "imperial": "1/2 cup caster sugar" },
-        { "group": "Flavour", "metric": "90 g unsweetened pistachio butter", "imperial": "1/3 cup unsweetened pistachio butter" },
-        { "group": "Flavour", "metric": "60 g full-fat cream cheese, softened", "imperial": "2 oz full-fat cream cheese, softened" },
-        { "group": "Flavour", "metric": "1/2 tsp fine sea salt", "imperial": "1/2 tsp fine sea salt" }
+        {
+          "group": "Base",
+          "metric": "3 dl whole milk",
+          "imperial": "1 1/4 cups whole milk"
+        },
+        {
+          "group": "Base",
+          "metric": "1.5 dl heavy cream",
+          "imperial": "2/3 cup heavy cream"
+        },
+        {
+          "group": "Base",
+          "metric": "1 dl caster sugar",
+          "imperial": "1/2 cup caster sugar"
+        },
+        {
+          "group": "Flavour",
+          "metric": "90 g unsweetened pistachio butter",
+          "imperial": "1/3 cup unsweetened pistachio butter"
+        },
+        {
+          "group": "Flavour",
+          "metric": "60 g full-fat cream cheese, softened",
+          "imperial": "2 oz full-fat cream cheese, softened"
+        },
+        {
+          "group": "Flavour",
+          "metric": "1/2 tsp fine sea salt",
+          "imperial": "1/2 tsp fine sea salt"
+        }
       ],
       "steps": [
-        "Beat the cream cheese and sugar together in a bowl until smooth. Doing this first stops the cream cheese seizing into lumps later.",
-        "Add the pistachio butter and salt and beat again until evenly combined.",
-        "Blend in the milk and cream until the mixture is completely smooth and pale green.",
-        "Pour into the pint container, stopping at the MAX FILL line.",
-        "Level the surface, fit the lid, and freeze flat for a full 24 hours.",
-        "Spin on GELATO straight from the freezer.",
-        "If it comes out crumbly, add a tablespoon of milk and run RE-SPIN.",
-        "Serve with chopped pistachios and a little flaky salt."
+        {
+          "title": "Soften the cream cheese",
+          "detail": "Beat the cream cheese and sugar together in a bowl until smooth. Doing this first stops the cream cheese seizing into lumps later."
+        },
+        {
+          "title": "Add the pistachio",
+          "detail": "Add the pistachio butter and salt and beat again until evenly combined."
+        },
+        {
+          "title": "Blend the base",
+          "detail": "Blend in the milk and cream until the mixture is completely smooth and pale green."
+        },
+        {
+          "title": "Fill the pint",
+          "detail": "Pour into the pint container, stopping at the MAX FILL line."
+        },
+        {
+          "title": "Freeze level",
+          "detail": "Level the surface, fit the lid, and freeze flat for a full 24 hours."
+        },
+        {
+          "title": "Spin",
+          "detail": "Spin on GELATO straight from the freezer."
+        },
+        {
+          "title": "Re-spin if needed",
+          "detail": "If it comes out crumbly, add a tablespoon of milk and run RE-SPIN."
+        },
+        {
+          "title": "Finish and serve",
+          "detail": "Serve with chopped pistachios and a little flaky salt."
+        }
       ],
       "tips": [
         "Cream cheese straight from the fridge will not incorporate. Leave it out for half an hour first.",
@@ -212,7 +470,7 @@
     {
       "id": "espresso-stracciatella",
       "title": "Espresso Stracciatella Gelato",
-      "category": "gelato",
+      "category": "classic",
       "summary": "Bitter espresso base shot through with shards of dark chocolate, added on the mix-in cycle so they stay crisp.",
       "image": "img/espresso-stracciatella.svg",
       "imageAlt": "Coffee-coloured gelato shot through with thin shards of dark chocolate",
@@ -226,23 +484,75 @@
       "container": "710 ml Deluxe pint",
       "article": "Stracciatella is not chocolate chip. The difference is that the chocolate goes in as thin, brittle shards rather than solid chunks, so it shatters against the teeth instead of sitting there frozen and waxy. On a Creami you get that by chopping the chocolate very fine and adding it on the MIX-IN cycle at the end, rather than freezing it into the base where the blade would simply grind it away. The espresso should be strong and properly cooled — hot coffee poured into a dairy base will curdle it, and weak coffee disappears entirely once frozen. If you only have instant, use twice as much as the jar suggests.",
       "ingredients": [
-        { "group": "Base", "metric": "2.5 dl whole milk", "imperial": "1 cup whole milk" },
-        { "group": "Base", "metric": "2 dl heavy cream", "imperial": "3/4 cup + 2 tbsp heavy cream" },
-        { "group": "Base", "metric": "1 dl strong espresso, cooled", "imperial": "Scant 1/2 cup strong espresso, cooled" },
-        { "group": "Base", "metric": "1 dl caster sugar", "imperial": "1/2 cup caster sugar" },
-        { "group": "Base", "metric": "60 g full-fat cream cheese, softened", "imperial": "2 oz full-fat cream cheese, softened" },
-        { "group": "Base", "metric": "1/4 tsp fine sea salt", "imperial": "1/4 tsp fine sea salt" },
-        { "group": "Mix-in", "metric": "50 g dark chocolate, finely chopped", "imperial": "1 3/4 oz dark chocolate, finely chopped" }
+        {
+          "group": "Base",
+          "metric": "2.5 dl whole milk",
+          "imperial": "1 cup whole milk"
+        },
+        {
+          "group": "Base",
+          "metric": "2 dl heavy cream",
+          "imperial": "3/4 cup + 2 tbsp heavy cream"
+        },
+        {
+          "group": "Base",
+          "metric": "1 dl strong espresso, cooled",
+          "imperial": "Scant 1/2 cup strong espresso, cooled"
+        },
+        {
+          "group": "Base",
+          "metric": "1 dl caster sugar",
+          "imperial": "1/2 cup caster sugar"
+        },
+        {
+          "group": "Base",
+          "metric": "60 g full-fat cream cheese, softened",
+          "imperial": "2 oz full-fat cream cheese, softened"
+        },
+        {
+          "group": "Base",
+          "metric": "1/4 tsp fine sea salt",
+          "imperial": "1/4 tsp fine sea salt"
+        },
+        {
+          "group": "Mix-in",
+          "metric": "50 g dark chocolate, finely chopped",
+          "imperial": "1 3/4 oz dark chocolate, finely chopped"
+        }
       ],
       "steps": [
-        "Beat the cream cheese and sugar together until smooth.",
-        "Blend in the milk, cream, cooled espresso and salt until completely smooth.",
-        "Pour into the pint container, stopping at the MAX FILL line.",
-        "Level the surface, fit the lid, and freeze flat for a full 24 hours.",
-        "Spin on GELATO straight from the freezer.",
-        "Chop the chocolate as finely as you can manage — you want shards and dust, not chunks.",
-        "Make a well in the middle of the spun gelato, tip in the chocolate, and run MIX-IN.",
-        "Serve immediately, while the chocolate is still crisp."
+        {
+          "title": "Soften the cream cheese",
+          "detail": "Beat the cream cheese and sugar together until smooth."
+        },
+        {
+          "title": "Blend the base",
+          "detail": "Blend in the milk, cream, cooled espresso and salt until completely smooth."
+        },
+        {
+          "title": "Fill the pint",
+          "detail": "Pour into the pint container, stopping at the MAX FILL line."
+        },
+        {
+          "title": "Freeze level",
+          "detail": "Level the surface, fit the lid, and freeze flat for a full 24 hours."
+        },
+        {
+          "title": "Spin",
+          "detail": "Spin on GELATO straight from the freezer."
+        },
+        {
+          "title": "Chop the chocolate",
+          "detail": "Chop the chocolate as finely as you can manage — you want shards and dust, not chunks."
+        },
+        {
+          "title": "Run the mix-in",
+          "detail": "Make a well in the middle of the spun gelato, tip in the chocolate, and run MIX-IN."
+        },
+        {
+          "title": "Serve immediately",
+          "detail": "Serve immediately, while the chocolate is still crisp."
+        }
       ],
       "tips": [
         "The espresso must be at room temperature or colder before it meets the dairy. Hot coffee will curdle the base.",
