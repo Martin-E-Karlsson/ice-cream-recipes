@@ -171,4 +171,26 @@ function renderHomePage() {
     });
 }
 
+/* Shows the name saved by the join form on the start page. getProfileName()
+   comes from components.js, which loads first. */
+function renderHomeGreeting() {
+  const greeting = document.querySelector('#home-greeting');
+
+  if (!greeting) {
+    return;
+  }
+
+  const name = typeof getProfileName === 'function' ? getProfileName() : '';
+
+  if (!name) {
+    greeting.hidden = true;
+    greeting.textContent = '';
+    return;
+  }
+
+  greeting.hidden = false;
+  greeting.textContent = `Welcome back, ${name} — here are your picks for today.`;
+}
+
+renderHomeGreeting();
 renderHomePage();
