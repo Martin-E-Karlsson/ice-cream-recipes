@@ -34,7 +34,7 @@ function createRecipeCard(recipe) {
     const content = document.createElement('div');
     content.className = 'recipe-content';
 
-    const title = document.createElement('h3');
+    const title = document.createElement('h2');
     title.className = 'recipe-title';
     title.textContent = recipe.title;
 
