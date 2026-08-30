@@ -6,12 +6,6 @@
   padding: 0;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
 :root {
   --color-bg: #FFFDF9;
   --color-surface: #FFFFFF;
@@ -53,6 +47,7 @@ img {
     --color-secondary: #A7C98B;
     --color-secondary-soft: #2E3A26;
     --color-border: #3A322B;
+    --shadow-card: 0 0 0 1px var(--color-border);
   }
 }
 
@@ -72,7 +67,7 @@ img {
 }
 
 html {
-  font-size: 16px;
+  font-size: 100%;
 }
 
 body {
@@ -107,65 +102,184 @@ img {
   height: auto;
 }
 
+/* ============================================================
+   6. LAYOUT
+   ============================================================ */
+
 .container {
-  max-width: 1200px;
+  width: 100%;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: var(--space-m);
+  padding-inline: var(--space-m);
 }
 
-header {
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* ============================================================
+   7. COMPONENTS — header, nav, footer
+   ============================================================ */
+
+/* ---- Site header ---- */
+.site-header {
   background: var(--color-surface);
-  padding: var(--space-m) var(--space-l);
-  box-shadow: var(--shadow-card);
+  border-bottom: 1px solid var(--color-border);
+  padding-block: var(--space-m);
+}
+
+.header-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-s);
+}
+
+.header-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-m);
 }
 
 .brand {
   color: var(--color-text);
   font-family: var(--font-display);
-  font-size: 2rem;
-  line-height: 1.2;
+  font-size: 1.5rem;
   font-weight: 700;
+  line-height: 1.2;
   text-decoration: none;
+}
+
+/* ---- Navigation (Flexbox) ---- */
+.main-nav ul,
+.footer-nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-m);
 }
 
 nav a {
   color: var(--color-text);
   text-decoration: none;
-  margin-right: var(--space-m);
 }
 
-footer {
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a[aria-current="page"] {
+  color: var(--color-accent);
+  border-bottom: 2px solid var(--color-accent);
+}
+
+/* ---- Theme toggle ---- */
+.theme-toggle {
+  font: inherit;
+  color: var(--color-text);
+  background: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  padding: 0.35em 0.9em;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  background: var(--color-accent-soft);
+}
+
+/* ---- Site footer (Grid) ---- */
+.site-footer {
   background: var(--color-surface-alt);
-  padding: var(--space-m) var(--space-l);
-  text-align: center;
+  border-top: 1px solid var(--color-border);
+  padding-block: var(--space-xl);
   font-size: 0.875rem;
   color: var(--color-text-muted);
 }
 
-.header-inner,
 .footer-inner {
+  gap: 0.75rem;
+}
+
+.footer-branding .brand {
+  font-size: 1.25rem;
+  color: var(--color-text);
+}
+
+.footer-meta {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 1rem;
+  gap: var(--space-xs);
+  padding-left: var(--space-m);
 }
 
-@media (min-width: 768px) {
-  .header-inner,
-  .footer-inner {
+/* ============================================================
+   8. TABLET — 768px and up
+   ============================================================ */
+
+@media screen and (min-width: 768px) {
+  .header-inner {
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    gap: var(--space-l);
   }
-}
 
-@media (min-width: 1024px) {
-  .header-inner,
+  .brand {
+    font-size: 1.625rem;
+  }
+
+  /* Branding left, nav right — same shape as the header */
   .footer-inner {
-    max-width: 1100px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-columns: 1fr auto;
+    align-items: start;
+    gap: var(--space-l) var(--space-xl);
+  }
+
+  /* Credits drop to a full-width second row, side by side */
+  .footer-meta {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--space-l);
+    padding-top: var(--space-m);
+    border-top: 1px solid var(--color-border);
+  }
+
+  .footer-meta p {
+    flex: 1 1 12rem;
   }
 }
 
+/* ============================================================
+   9. DESKTOP — 1024px and up
+   ============================================================ */
 
+@media screen and (min-width: 1024px) {
+  .site-header {
+    padding-block: var(--space-l);
+  }
 
+  .brand {
+    font-size: 1.75rem;
+  }
+
+  .site-footer {
+    padding-block: var(--space-2xl);
+  }
+
+  .footer-inner {
+    gap: var(--space-xl) var(--space-2xl);
+  }
+
+  .footer-meta {
+    gap: var(--space-2xl);
+    padding-top: var(--space-l);
+    text-align: center;
+  }
+}
