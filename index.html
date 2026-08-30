@@ -11,10 +11,29 @@
 </head>
 <body>
     <div id="site-header"></div>
-    <main>
-		<!-- TBD: Main content goes here -->
-	</main>
+    <main class="page-shell">
+        <section class="recipes-hero" aria-labelledby="home-heading">
+            <p class="eyebrow">Creamy ideas</p>
+            <h1 id="home-heading">Recommended pints for your next spin</h1>
+            <p class="lede">A small, simple home page with your picks for today and the recipes you have saved in your browser.</p>
+        </section>
+
+        <section class="home-section" aria-labelledby="recommended-heading">
+            <div class="section-heading">
+                <h2 id="recommended-heading">Recommended</h2>
+            </div>
+            <div id="recommended-grid" class="recipes-grid" aria-live="polite"></div>
+        </section>
+
+        <section class="home-section" aria-labelledby="favorites-heading">
+            <div class="section-heading">
+                <h2 id="favorites-heading">Favorites</h2>
+            </div>
+            <div id="favorites-grid" class="recipes-grid" aria-live="polite"></div>
+        </section>
+    </main>
     <div id="site-footer"></div>
     <script src="js/components.js" defer></script>
+    <script src="js/home.js" defer></script>
 </body>
 </html>
