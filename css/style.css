@@ -216,11 +216,167 @@ nav a[aria-current="page"] {
   padding-left: var(--space-m);
 }
 
+/* ---- Page shell ---- */
+.page-shell {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-inline: var(--space-m);
+  padding-block: var(--space-xl);
+}
+
+/* ---- Page hero ---- */
+.recipes-hero {
+  background: var(--color-surface-alt);
+  border-radius: var(--radius);
+  padding: var(--space-l);
+}
+
+.eyebrow {
+  color: var(--color-secondary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-xs);
+}
+
+.recipes-hero h1 {
+  font-size: 2rem;
+  margin-bottom: var(--space-s);
+}
+
+.lede {
+  color: var(--color-text-muted);
+  max-width: 60ch;
+}
+
+/* ---- Filter buttons (Flexbox) ---- */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-s);
+  margin-block: var(--space-l);
+}
+
+.filter-btn {
+  font: inherit;
+  cursor: pointer;
+  padding: 0.4em 1em;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--color-text);
+}
+
+.filter-btn:hover {
+  background: var(--color-accent-soft);
+}
+
+.filter-btn.active {
+  background: var(--color-accent);
+  color: var(--color-on-accent);
+  border-color: var(--color-accent);
+}
+
+/* ---- Recipe grid (CSS Grid) ---- */
+.recipes-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-l);
+}
+
+.recipes-grid > h2 {
+  grid-column: 1 / -1;
+}
+
+.recipe-card {
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.recipe-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(42, 35, 33, 0.16);
+}
+
+.recipe-card-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.recipe-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.recipe-category {
+  display: inline-block;
+  margin: var(--space-m) var(--space-m) 0;
+  padding: 0.2em 0.8em;
+  background: var(--color-secondary-soft);
+  color: var(--color-secondary);
+  border-radius: var(--radius-pill);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.recipe-content {
+  padding: var(--space-m);
+}
+
+.recipe-title {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-xs);
+}
+
+.recipe-summary {
+  color: var(--color-text-muted);
+}
+
+.recipe-meta {
+  margin-top: var(--space-s);
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.empty-state {
+  grid-column: 1 / -1;
+  padding: var(--space-xl);
+  text-align: center;
+  color: var(--color-text-muted);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius);
+}
+
 /* ============================================================
    8. TABLET — 768px and up
    ============================================================ */
 
 @media screen and (min-width: 768px) {
+  .page-shell {
+    padding-block: var(--space-2xl);
+  }
+
+  .recipes-hero {
+    padding: var(--space-xl);
+  }
+
+  .recipes-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .recipes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .header-inner {
     flex-direction: row;
     align-items: center;
@@ -261,6 +417,19 @@ nav a[aria-current="page"] {
    ============================================================ */
 
 @media screen and (min-width: 1024px) {
+  .recipes-hero {
+    padding: var(--space-2xl);
+  }
+
+  .recipes-hero h1 {
+    font-size: 3rem;
+  }
+
+  .recipes-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-xl);
+  }
+
   .site-header {
     padding-block: var(--space-l);
   }

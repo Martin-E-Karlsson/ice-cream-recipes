@@ -11,8 +11,8 @@
       "blurb": "Lower-sugar, protein-forward pints that still spin up creamy."
     },
     {
-      "id": "fruity",
-      "label": "Fruity",
+      "id": "sorbet",
+      "label": "Sorbet",
       "blurb": "Dairy-free, fruit-led and sharp. The fastest pints to put together."
     }
   ],
@@ -22,9 +22,13 @@
       "title": "Salt Licorice Protein Ice Cream",
       "category": "protein",
       "summary": "Black, salty and faintly medicinal in the best Nordic way, with enough protein to pass as breakfast.",
-      "image": "img/salt-licorice.svg",
+      "image": "img/salt-licorice.jpg",
       "imageAlt": "A dark, near-black scoop of salt licorice ice cream in a bowl",
-      "imageCredit": null,
+      "imageCredit": {
+        "photographer": "Karyna Panchenko",
+        "source": "Pexels",
+        "url": "https://www.pexels.com/photo/ice-cream-with-chocolate-cream-14612417/"
+      },
       "youtubeId": null,
       "credit": null,
       "spinCycle": "Lite Ice Cream",
@@ -118,9 +122,13 @@
       "title": "Chocolate Banana Protein Ice Cream",
       "category": "protein",
       "summary": "The reliable one. Ripe banana does most of the sweetening, so the sugar stays low without the flavour going flat.",
-      "image": "img/chocolate-banana.svg",
+      "image": "img/chocolate-banana.jpg",
       "imageAlt": "A scoop of chocolate banana ice cream topped with whipped cream and crumbled cookies",
-      "imageCredit": null,
+      "imageCredit": {
+        "photographer": "ROMAN ODINTSOV",
+        "source": "Pexels",
+        "url": "https://www.pexels.com/photo/chocolate-ice-cream-on-brown-round-cup-5061214/"
+      },
       "youtubeId": null,
       "credit": null,
       "spinCycle": "Lite Ice Cream",
@@ -215,11 +223,15 @@
     {
       "id": "raspberry-lime-sorbet",
       "title": "Raspberry Lime Sorbet",
-      "category": "fruity",
+      "category": "sorbet",
       "summary": "Sharp, dairy-free and about six minutes of actual work. Straining the seeds is what makes it feel bought rather than made.",
-      "image": "img/raspberry-lime-sorbet.svg",
+      "image": "img/raspberry-lime-sorbet.jpg",
       "imageAlt": "Deep pink raspberry sorbet scooped into a chilled glass with a lime wedge",
-      "imageCredit": null,
+      "imageCredit": {
+        "photographer": "Andrés Gongora",
+        "source": "Pexels",
+        "url": "https://www.pexels.com/photo/close-up-of-a-sorbet-13068808/"
+      },
       "youtubeId": null,
       "credit": null,
       "spinCycle": "Sorbet",
@@ -298,11 +310,15 @@
     {
       "id": "mango-passionfruit-sorbet",
       "title": "Mango Passionfruit Sorbet",
-      "category": "fruity",
+      "category": "sorbet",
       "summary": "Heavy tropical sweetness cut hard by passionfruit acid. No straining needed — the seeds earn their place here.",
-      "image": "img/mango-passionfruit-sorbet.svg",
+      "image": "img/mango-passionfruit-sorbet.jpg",
       "imageAlt": "Bright orange mango sorbet with passionfruit seeds spooned over the top",
-      "imageCredit": null,
+      "imageCredit": {
+        "photographer": "ROMAN ODINTSOV",
+        "source": "Pexels",
+        "url": "https://www.pexels.com/photo/close-up-of-ice-cream-with-a-mango-5060371/"
+      },
       "youtubeId": null,
       "credit": null,
       "spinCycle": "Sorbet",
@@ -384,9 +400,13 @@
       "title": "Pistachio Gelato",
       "category": "classic",
       "summary": "Dense, savoury-sweet and genuinely green — no colouring, no almond shortcuts, just a lot of pistachio.",
-      "image": "img/pistachio-gelato.svg",
+      "image": "img/pistachio-gelato.jpg",
       "imageAlt": "Pale green pistachio gelato in a metal tub with chopped pistachios scattered on top",
-      "imageCredit": null,
+      "imageCredit": {
+        "photographer": "Anastasia Belousova",
+        "source": "Pexels",
+        "url": "https://www.pexels.com/photo/close-up-photo-of-ice-cream-in-a-white-bowl-3770058/"
+      },
       "youtubeId": null,
       "credit": null,
       "spinCycle": "Gelato",
@@ -472,9 +492,13 @@
       "title": "Espresso Stracciatella Gelato",
       "category": "classic",
       "summary": "Bitter espresso base shot through with shards of dark chocolate, added on the mix-in cycle so they stay crisp.",
-      "image": "img/espresso-stracciatella.svg",
+      "image": "img/espresso-stracciatella.jpg",
       "imageAlt": "Coffee-coloured gelato shot through with thin shards of dark chocolate",
-      "imageCredit": null,
+      "imageCredit": {
+        "photographer": "Sarah li",
+        "source": "Pexels",
+        "url": "https://www.pexels.com/photo/an-affogato-dessert-on-a-wooden-saucer-and-tray-9442600/"
+      },
       "youtubeId": null,
       "credit": null,
       "spinCycle": "Gelato, then Mix-in",

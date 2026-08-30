@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Recipes | The Pint Club</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet"
+        />
+    </head>
+    <body>
+    <div id="site-header"></div>
+
+    <main class="page-shell">
+        <section class="recipes-hero">
+            <p class="eyebrow">The Recipe Counter</p>
+            <h1>Recipes for every kind of pint</h1>
+            <p class="lede">
+                Browse community-tested recipes, from rich classics to bright fruit sorbets
+                and protein-packed favourites.
+            </p>
+            </section>
+        <section class="recipes-section" aria-labelledby="recipes-heading">
+            <!-- <h2 id="recipes-heading">All recipes</h2> -->
+            
+            <div class="filters" aria-label="Recipe filters">
+                <button class="filter-btn active" data-filter="all" type="button">All recipes</button>
+                <button class="filter-btn" data-filter="classic" type="button">Classic</button>
+                <button class="filter-btn" data-filter="protein" type="button">Protein</button>
+                <button class="filter-btn" data-filter="sorbet" type="button">Sorbet</button>
+            </div>
+
+            <div id="recipes-grid" class="recipes-grid" aria-live="polite"></div>
+        </section>
+
+        <section id="recipes-grid" class="recipes-grid" aria-live="polite"></section>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="js/components.js" defer></script>
+    <script src="js/recipes.js" defer></script>
+    </body>
+</html>
