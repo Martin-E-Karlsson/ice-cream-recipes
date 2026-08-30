@@ -48,12 +48,8 @@ function renderProfileSlot() {
   slot.textContent = '';
   const name = getProfileName();
 
+  // No profile yet: leave the slot empty. The Join link in the nav is the way in.
   if (!name) {
-    const signUpLink = document.createElement('a');
-    signUpLink.href = 'join.html';
-    signUpLink.className = 'profile-link';
-    signUpLink.textContent = 'Sign up';
-    slot.appendChild(signUpLink);
     return;
   }
 
