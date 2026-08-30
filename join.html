@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join | The Pint Club</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="site-header"></div>
+
+    <main class="page-shell">
+      <section class="join-shell" aria-labelledby="join-heading">
+        <div class="join-hero">
+          <p class="eyebrow">Join the club</p>
+          <h1 id="join-heading">Make a simple profile</h1>
+          <p class="lede">Create your username and keep your favorite recipes in one browser.</p>
+        </div>
+
+        <form id="join-form" class="join-form" novalidate>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" />
+            <p id="email-error" class="field-error" aria-live="polite"></p>
+          </div>
+
+          <div class="form-field">
+            <label for="username">Username</label>
+            <input id="username" name="username" type="text" autocomplete="username" />
+            <p id="username-error" class="field-error" aria-live="polite"></p>
+          </div>
+
+          <div class="form-field">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" autocomplete="new-password" />
+            <p id="password-error" class="field-error" aria-live="polite"></p>
+          </div>
+
+          <div class="form-field">
+            <label for="confirmPassword">Repeat password</label>
+            <input id="confirmPassword" name="confirmPassword" type="password" autocomplete="new-password" />
+            <p id="confirmPassword-error" class="field-error" aria-live="polite"></p>
+          </div>
+
+          <button class="primary-button" type="submit">Create profile</button>
+          <p id="form-status" class="form-status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="js/components.js" defer></script>
+    <script src="js/join.js" defer></script>
+  </body>
+</html>
